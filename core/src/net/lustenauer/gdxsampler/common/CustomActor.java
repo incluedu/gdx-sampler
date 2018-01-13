@@ -12,9 +12,6 @@ import com.badlogic.gdx.utils.Logger;
  * @author Patric Hollenstein
  */
 public class CustomActor extends Actor {
-    private static final Logger log = new Logger(CustomActor.class.getName(), Logger.DEBUG);
-
-
     private final TextureRegion region;
 
     public CustomActor(TextureRegion region) {
@@ -23,7 +20,6 @@ public class CustomActor extends Actor {
 
     @Override
     public void act(float delta) {
-        log.debug("sct on actor= " + this);
         super.act(delta);
     }
 
